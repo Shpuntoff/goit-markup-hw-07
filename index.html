@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
 
@@ -29,7 +28,7 @@
       <div class="container flex">
         <nav class="site-nav">
           <!-- logo block -->
-          <a href="./index.html" class="logo link"
+          <a href="./index.html" class="logo logo--header link"
             ><span class="accent">Web</span>Studio</a>
             <!-- site navigation -->
           <ul class="site-nav__list list">
@@ -372,8 +371,8 @@
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
-        <section class="modal-form">
-          <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
+        <section class="modal__form">
+          <h2 class="modal__form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <form class="contact-form">
             <label for="name" class="contact-form__name">
               Имя
@@ -421,7 +420,7 @@
                   <svg class="modal-checkbox__icon modal-checkbox__icon--eneble">
                     <use href="./images/icons.svg#icon-check"></use>
                   </svg>
-                Соглашаюсь с рассылкой и принимаю <a href="" class="odal-checkbox__link accent"> Условия договора</a></label>
+                Соглашаюсь с рассылкой и принимаю <a href="" class="modal-checkbox__link accent"> Условия договора</a></label>
               <button class="button modal__btn" type="submit">Отправить</button>
             </form>
         </section>
@@ -441,15 +440,15 @@
           <span class="accent">Web</span>Studio</a>
           <address class="footer-contacts__adress">
             <ul class="footer-contacts__list list">
-              <li>
+              <li class="footer-contacts__item">
                 <a href="" 
                 class="footer-contacts__link footer-contacts__link--streat link">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
-              <li>
+              <li class="footer-contacts__item">
                 <a href="mailto:info@devstudio.com" 
                 class="footer-contacts__link link">info@devstudio.com</a>
                 </li>
-              <li>
+              <li class="footer-contacts__item">
                 <a href="tel:+380961111111" 
                 class="footer-contacts__link link">+38 096 111 11 11</a></li>
               </ul>
@@ -458,27 +457,27 @@
 
           <!-- footer-soc -->
         <div class="footer-soc">
-          <h2 class="foter-soc__title">присоединяйтесь</h2>
-          <ul class="foter-soc__list list">
-            <li class="foter-soc__item"><a href="" class="foter-soc__link">
+          <h2 class="footer-soc__title">присоединяйтесь</h2>
+          <ul class="footer-soc__list list">
+            <li class="footer-soc__item"><a href="" class="footer-soc__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-              <li class="foter-soc__item"><a href="" class="foter-soc__link">
+              <li class="footer-soc__item"><a href="" class="footer-soc__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="foter-soc__item"><a href="" class="foter-soc__link">
+            <li class="footer-soc__item"><a href="" class="footer-soc__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="foter-soc__item"><a href="" class="foter-soc__link">
+            <li class="footer-soc__item"><a href="" class="footer-soc__link">
                 <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -490,7 +489,7 @@
           <!-- footer subscription -->
         <div class="footer-sub">
           <h3 class="footer-sub__title">Подпишитесь на рассылку</h3>
-            <form class="footer-sub__form">
+            <form class="flex">
             <label for="mail">
                 <input class="footer-sub__input" type="email" name="mail" placeholder="E-mail"/>
                 </label>
